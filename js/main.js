@@ -30,26 +30,3 @@ createApp({
       });
   },
 }).mount("#app");
-
-createApp({
-  data() {
-    return {
-      products: [],
-    };
-  },
-  computed: {
-    totalPrix() {
-      return this.products.reduce((total, product) => {
-        return totl + product.count * product.prix;
-      }, 0);
-    },
-  },
-
-  created() {
-    fetch("products.json")
-      .then((response) => response.json())
-      .then((json) => {
-        this.products = json.products;
-      });
-  },
-}).mount("#add");
