@@ -144,8 +144,9 @@
            <span>
             <a class="bpanier" href="#"
               ><i class="fa-solid fa-bag-shopping"></i
-            >   <span class="notification"></span> 
-             <span  class="prixtotal"  > {{ totalPrix.toFixed(2)   }} € </span> 
+            >   <span id="notification">{{ajout}}</span> 
+              
+             <span  id="prixtotal"  > {{ totalPrix.toFixed(2)   }} € </span> 
               
               </a>
           </span>
@@ -297,7 +298,7 @@
        <div class=" divfieldset container-fluid">
           <div   class="row justify-content-center  ">
             
-            <fieldset v-for="product in products" class=" acol-ms-12 col-md-5 col-lg-3 " >
+            <fieldset v-for="product in products" class=" col-ms-12 col-md-5 col-lg-3 " >
              <article class="f1 ">
               <a href="#"><img id="photo1" :src="`${product.image} `" alt="bijoux" height=""> <img id="photo2" :src="`${product.image2} `" alt="bijoux" height=""> </a>
               

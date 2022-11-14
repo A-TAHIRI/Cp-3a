@@ -4,6 +4,7 @@ createApp({
   data() {
     return {
       products: [],
+      ajout: 0,
     };
   },
   computed: {
