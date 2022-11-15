@@ -175,8 +175,9 @@ h5 a:hover {
   /* text-shadow: gray 0px 0px 2px;*/
 }
 #prixtotal {
-  margin-left: 6px;
+  margin-left: 2px;
   color: gray;
+  font-size: 1rem;
 }
 
 /******************************************fealsdet************************************/
